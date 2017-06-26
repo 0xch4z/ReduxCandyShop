@@ -7,7 +7,7 @@ import Layout from './Layout';
 export default () => (
   <Layout>
     <Jumbotron>
-      <h1>{'Hello, Raleigh!'}</h1>
+      <h1>{"Hello, Raleigh!"}</h1>
       <p>
         {`
           We've just opened our first location in Raleigh. Head down to

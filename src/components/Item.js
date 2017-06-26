@@ -12,7 +12,7 @@ export default (props) => (
       <h4 className="item-header">
         {props.item.name}
         <Badge className="price">
-          {'5.00'}
+          {"5.00"}
         </Badge>
       </h4>
       <p className="item-description">

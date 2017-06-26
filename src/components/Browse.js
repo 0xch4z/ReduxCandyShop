@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionsReducer } from 'redux';
 
 import Layout from './Layout';
 import Item from './Item';

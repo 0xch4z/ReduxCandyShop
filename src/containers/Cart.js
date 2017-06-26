@@ -10,8 +10,12 @@ class Cart extends Component {
     return(
       <Layout>
         <h1>Cart</h1>
-        <button type="button" onClick={this.props.incrementQuantity}> + </button>
-        <button type="button" onClick={this.props.decrementQuantity}> - </button>
+        <button type="button" onClick={this.props.incrementQuantity}>
+          {" + "}
+        </button>
+        <button type="button" onClick={this.props.decrementQuantity}>
+          {" - "} 
+        </button>
       </Layout>
     );
   }

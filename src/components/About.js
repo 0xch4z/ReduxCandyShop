@@ -4,9 +4,11 @@ import Layout from './Layout';
 // TODO: Implement Bootstrap Element
 
 export default () => (
-  <Layout>
-    <h1>
-      {"About"}
-    </h1>
-  </Layout>
+  <div>
+    <Layout>
+      <h1>
+        {"About"}
+      </h1>
+    </Layout>
+  </div>
 )

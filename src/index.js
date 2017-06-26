@@ -16,7 +16,13 @@ import Register from './components/Register';
 import SignIn from './components/SignIn';
 
 const root = document.getElementById('root');
-const store = createStore(RootReducer, applyMiddleware(logger));
+let store;
+
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+    store = createStore(RootReducer, applyMiddleware(logger));
+} else {
+    store = createStore(RootReducer);
+}
 
 render(
   <Provider store={store}>

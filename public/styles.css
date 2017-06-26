@@ -69,3 +69,8 @@ footer {
 .a:hover {
   color: #ddd;
 }
+
+.img-spotlight {
+  margin-top: 25px
+  max-height: 300px
+}

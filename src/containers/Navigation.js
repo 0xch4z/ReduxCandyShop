@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 class Navigation extends Component {
   render() {
+    console.log(this.props)
     return(
       <div>
         <Navbar>
@@ -34,7 +35,7 @@ class Navigation extends Component {
               </NavItem>
               <NavItem eventKey={4}>
                 <Link to="/cart">
-                  Cart <Badge>{this.props.cartQuantity}</Badge>
+                  Cart <Badge>{this.props.quantity}</Badge>
                 </Link>
               </NavItem>
             </Nav>
@@ -47,7 +48,7 @@ class Navigation extends Component {
 
 function mapStateToProps(state) {
   return {
-    quantity: (state.items.quantity)
+    quantity: (state.cart.quantity)
   }
 }
 
